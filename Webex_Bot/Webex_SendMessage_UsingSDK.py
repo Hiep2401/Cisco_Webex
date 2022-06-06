@@ -1,0 +1,1 @@
+from webexteamssdk import WebexTeamsAPIimport osimport sys_varaccess_token = os.getenv("WEBEX_TEAMS_ACCESS_TOKEN")api = WebexTeamsAPI(access_token)bot_email = os.getenv("TEAMS_BOT_EMAIL")api.messages.create(toPersonEmail=bot_email, text="Em tuyet voi nhat")
